@@ -1,3 +1,3 @@
 # TripToDream
 Home page 
-[Link](https://alinaandriychuk.github.io/TripToDream/)
+[Link](https://github.com/AlinaAndriychuk/TripToDream.git)
