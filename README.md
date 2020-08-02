@@ -1,3 +1,3 @@
 # TripToDream
 Home page 
-[Link](https://github.com/alinaandriychuk/TripToDream/)
+[Link](https://alinaandriychuk.github.io/Parquetry/)
