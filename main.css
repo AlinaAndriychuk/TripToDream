@@ -14,11 +14,15 @@ body {
 .header__top {
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 
 .header__logo {
-    width: 130px;
+    width: 125px;
+}
+
+.header__menu-image {
+    display: none;
 }
 
 .header__menu {
@@ -51,16 +55,17 @@ body {
 }
 
 .header__bottom {
-    margin-top: 150px;
+    margin-top: 180px;
 }
 
 .header__title {
-    font-size: 170px;
+    font-size: 140px;
+    text-transform: uppercase;
 }
 
 .header__text {
     padding-bottom: 20px;
-    width: 400px;
+    width: 430px;
 }
 
 .description__title {
@@ -69,8 +74,9 @@ body {
 }
 
 .description__line {
-    background-color: #8665ff98;
+    background-color: #271664;
     margin: 25px 0;
+    height: 2px;
 }
 
 .description__text {
@@ -79,14 +85,14 @@ body {
 }
 
 .offers__block {
-    background-color: #8665ff98;
+    background-color: #5940b6;
     height: 600px;
     text-align: center;
 }
 
 .offers__block:hover {
     background-color: #ffffff;
-    color: #8665ff98;
+    color: #5940b6;
     transition-duration: 0.3s;
 }
 
@@ -96,6 +102,7 @@ body {
 }
 
 .offers__text {
+    height: 180px;
     padding: 30px;
 }
 
@@ -113,9 +120,36 @@ body {
     text-decoration: none;
 }
 
-.carousel-inner img{
-    width: 100%;
-    height: 100%;
+.story-block {
+    background-color: #5940b6;
+    height: 300px;
+    text-align: right;
+}
+
+.story-block--dark {
+    background-color: #000032;
+    text-align: left;
+}
+
+.story-block__image--right {
+    float: right;
+}
+
+.story-block__image--left {
+    float: left;
+}
+
+.story-block__image {
+    margin: 25px 50px;
+    width: 250px;
+}
+
+.story-block__text {
+    padding: 70px;
+}
+
+.story-block__details {
+    display: none;
 }
 
 .gallery__heading {
@@ -149,4 +183,186 @@ body {
 
 .gallery__link--third {
     background-position: -45px -96px;
+}
+
+.carousel__image {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+    .header__top {
+        display: block;
+    }
+
+    .header__logo {
+        float: left;
+    }
+
+    .header__menu {
+        display: none;
+        margin-top: 0px;
+    }
+
+    .header__item {
+        clear: both;
+        margin: 10px -40px;
+    }
+
+    .header__link-item {
+        background-color: #cbbdff;
+    }
+
+    .header__link-item--framed {
+        border: none;
+    }
+
+    .header__menu-image {
+        display: inline-block;
+        margin: 25px;
+        transition-duration: 0.3s;
+        width: 80px;
+    }
+
+    .header__menu-image:focus {
+        opacity: 0;
+        outline: none;
+    }
+
+    .header__menu-image:focus ~ .header__menu {
+        display: block;
+    }
+
+    .header__bottom {
+        margin-top: 230px;
+    }
+
+    .header__title {
+        font-size: 120px;
+    }
+
+    .header__text {
+        margin-top: 10px;
+    }
+
+    .offers__block {
+        height: 500px;
+    }
+
+    .offers__image {
+        margin-top: 5px;
+        width: 200px;
+    }
+
+    .offers__text {
+        height: 150px;
+        padding: 0 5px;
+    }
+
+    .story-block__text {
+        padding: 40px;
+        vertical-align: middle;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header__bottom {
+        margin-top: 250px;
+    }
+
+    .description__text {
+        width: 100%;
+    }
+
+    .offers__block {
+        height: 450px;
+        margin-top: 20px;
+    }
+
+    .offers__text {
+        height: 100px;
+    }
+
+    .story-block {
+        height: 230px;
+    }
+
+    .story-block__image {
+        margin: 40px 20px;
+        width: 140px;
+    }
+    
+    .story-block__text {
+        padding: 20px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .header__menu-image {
+        margin: 25px 0;
+    }
+
+    .header__title {
+        font-size: 50px;
+    }
+
+    .header__text {
+        margin-top: 80px;
+        width: 100%;
+    }
+
+    .offers__block {
+        height: 470px;
+    }
+
+    .offers__text {
+        height: 140px;
+    }
+
+    .story-block {
+        height: auto;
+    }
+
+    .story-block__image {
+        margin: 10px;
+        width: 30%;
+    }
+
+    .story-block__text {
+        margin-bottom: 0;
+    }
+
+    .story-block__full-text {
+        display: none;
+    }
+
+    .story-block__details {
+        display: inline;
+    }
+
+    .story-block__summary {
+        padding: 10px;
+    }
+
+    .story-block__summary:focus {
+        border: none;
+        outline: none;
+    }
+
+    .gallery__heading {
+        font-size: 30px;
+    }
+
+    .carousel__heading {
+        font-size: 25px;
+    }
+
+    .carousel__text {
+        margin-bottom: 0;
+    }
+
+    .gallery__link {
+        margin: 0;
+    }
 }
