@@ -1,4 +1,4 @@
-# TripToDream
+# Trip To Dream
 
 This progect includes using BOOTSTRAP framework with GRID system and slider-carousel on JQUERY. 
 New tags from HTML5.
