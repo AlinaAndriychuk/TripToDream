@@ -13,9 +13,24 @@
     <header class="header">
       <div class="container">
         <div class="header__top">
-          <img class="header__logo" src="images/logo.png" alt="logo">
           <nav class="header__navigation">
-            <input class="header__menu-image" src="images/menu.png" type="image">
+            <menu class="header__burger-menu">
+              <input class="header__menu-input" id="headerMenu" type="checkbox">
+              <label class="header__menu-image" for="headerMenu"></label>
+              <li class="header__item">
+                <a class="header__link-item" href="#offers">Adventures</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link-item" href="#stories">Succeseful stories</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link-item" href="#gallery">Gallery</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link-item header__link-item--framed" href="#contacts">Contacts</a>
+              </li>
+            </menu>
+            <img class="header__logo" src="images/logo.png" alt="logo">
             <menu class="header__menu">
               <li class="header__item">
                 <a class="header__link-item" href="#offers">Adventures</a>

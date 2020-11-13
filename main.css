@@ -21,7 +21,13 @@ body {
     width: 125px;
 }
 
-.header__menu-image {
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__burger-menu {
     display: none;
 }
 
@@ -65,7 +71,7 @@ body {
 
 .header__text {
     padding-bottom: 20px;
-    width: 430px;
+    width: 460px;
 }
 
 .description__title {
@@ -191,22 +197,32 @@ body {
 }
 
 @media screen and (max-width: 1199px) {
+
+    .header {
+        height: 550px;
+    }
+
     .header__top {
         display: block;
     }
 
     .header__logo {
         float: left;
+        height: 125px;
+        position: relative;
     }
 
     .header__menu {
         display: none;
-        margin-top: 0px;
+        margin-top: 0;
     }
 
     .header__item {
         clear: both;
+        display: none;
         margin: 10px -40px;
+        opacity: 0;
+        transition: opacity 0.3s;
     }
 
     .header__link-item {
@@ -217,28 +233,44 @@ body {
         border: none;
     }
 
+    .header__burger-menu {
+        display: block;
+        height: 240px;
+        width: 200px;
+    }
+
     .header__menu-image {
-        display: inline-block;
-        margin: 25px;
+        background: url(images/menu.png) center no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        display: block;
+        height: 80px;
+        margin: 0 0 0 -40px;
         transition-duration: 0.3s;
         width: 80px;
     }
 
-    .header__menu-image:focus {
-        opacity: 0;
-        outline: none;
+    .header__menu-input {
+        display: none;
     }
 
-    .header__menu-image:focus ~ .header__menu {
-        display: block;
+    .header__menu-input:checked ~ .header__item {
+        display: inline-block;
+        opacity: 1;
+    }
+
+    .header__menu-input:checked ~ .header__menu-image {
+        background-image: url(images/menuafter.png);
+        background-size: 50px;
     }
 
     .header__bottom {
-        margin-top: 230px;
+        margin-top: 0;
     }
 
     .header__title {
         font-size: 120px;
+        line-height: 120px;
     }
 
     .header__text {
@@ -263,12 +295,10 @@ body {
         padding: 40px;
         vertical-align: middle;
     }
+
 }
 
 @media screen and (max-width: 767px) {
-    .header__bottom {
-        margin-top: 250px;
-    }
 
     .description__text {
         width: 100%;
@@ -299,16 +329,14 @@ body {
 }
 
 @media screen and (max-width: 575px) {
-    .header__menu-image {
-        margin: 25px 0;
-    }
 
     .header__title {
         font-size: 50px;
+        line-height: 70px;
     }
 
     .header__text {
-        margin-top: 80px;
+        margin-top: 30px;
         width: 100%;
     }
 
