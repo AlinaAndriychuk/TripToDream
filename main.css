@@ -330,13 +330,20 @@ body {
 
 @media screen and (max-width: 575px) {
 
+    .header__logo {
+        margin-right: 10px;
+        position: absolute;
+        right: 0;
+    }
+
     .header__title {
-        font-size: 50px;
-        line-height: 70px;
+        font-size: 48px;
+        line-height: 50px;
     }
 
     .header__text {
-        margin-top: 30px;
+        margin-top: 40px;
+        padding-bottom: 0;
         width: 100%;
     }
 
@@ -350,15 +357,17 @@ body {
 
     .story-block {
         height: auto;
+        min-height: 173px;
     }
 
     .story-block__image {
         margin: 10px;
-        width: 30%;
+        width: 29%;
     }
 
     .story-block__text {
         margin-bottom: 0;
+        padding-bottom: 0;
     }
 
     .story-block__full-text {
@@ -366,11 +375,13 @@ body {
     }
 
     .story-block__details {
-        display: inline;
+        display: list-item;
+        list-style: none;
+        padding: 0 20px 20px;
     }
 
     .story-block__summary {
-        padding: 10px;
+        padding-bottom: 0px;
     }
 
     .story-block__summary:focus {
