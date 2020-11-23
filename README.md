@@ -1,4 +1,4 @@
-# Trip To Dream
+# Trip to Dream
 
 Home page 
 [Link](https://alinaandriychuk.github.io/TripToDream/)
