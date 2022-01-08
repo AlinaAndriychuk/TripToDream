@@ -1,6 +1,6 @@
 # Trip to Dream
 
-Home page 
+Home page
 [Link](https://alinaandriychuk.github.io/TripToDream/)
 
 This progect about a trip to Corsica. It includes using BOOTSTRAP framework with GRID system and slider-carousel on JQUERY. 
